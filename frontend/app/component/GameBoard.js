@@ -71,7 +71,7 @@ export default function GameBoard({ username }) {
 
     try {
       setStatus('Placing bet...');
-      await axios.post('http://localhost:5000/api/players/bet', {
+      await axios.post('https://crypto-crash-game-12-backend.onrender.com/api/players/bet', {
         username,
         usdAmount: Number(betAmount),
         currency,
@@ -87,7 +87,7 @@ export default function GameBoard({ username }) {
   const cashOut = async () => {
     try {
       setStatus('Cashing out...');
-      await axios.post('http://localhost:5000/api/players/cashout', {
+      await axios.post('https://crypto-crash-game-12-backend.onrender.com/api/players/cashout', {
         username,
         multiplier,
         currency,
