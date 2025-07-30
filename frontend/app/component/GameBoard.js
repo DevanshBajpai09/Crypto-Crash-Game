@@ -239,7 +239,7 @@ export default function GameBoard({ username }) {
                 <li>• Place a bet before the round starts</li>
                 <li>• Cash out before the game crashes to win</li>
                 <li>• The longer you wait, the higher the multiplier</li>
-                <li>• If you don't cash out before crash, you lose</li>
+                <li>• If you don&apos;t cash out before crash, you lose</li>
               </ul>
             </div>
           </CardContent>

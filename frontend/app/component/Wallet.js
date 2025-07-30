@@ -59,7 +59,7 @@ export default function Wallet({ username }) {
               Wallet Balance
             </CardTitle>
             <CardTitle className="text-lg font-bold text-white mt-1">
-              {username.toUpperCase()}'s Wallet
+              {username.toUpperCase()}&apos;s Wallet
             </CardTitle>
           </div>
           <Button 
