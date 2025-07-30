@@ -18,7 +18,7 @@ export default function RoundHistory() {
   const fetchRounds = async () => {
     try {
       setLoading(true);
-      const res = await axios.get('http://localhost:5000/api/game/rounds');
+      const res = await axios.get('https://crypto-crash-game-12-backend.onrender.com/api/game/rounds');
       setRounds(res.data);
     } catch (err) {
       setError(err.message || 'Failed to fetch round history');
