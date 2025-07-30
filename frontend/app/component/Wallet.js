@@ -16,7 +16,7 @@ export default function Wallet({ username }) {
   const fetchWallet = async () => {
     try {
       setRefreshing(true);
-      const res = await axios.get(`http://localhost:5000/api/players/balance?username=${username}`);
+      const res = await axios.get(`https://crypto-crash-game-12-backend.onrender.com/api/players/balance?username=${username}`);
       setWallet(res.data.balance);
       setError(null);
     } catch (err) {
